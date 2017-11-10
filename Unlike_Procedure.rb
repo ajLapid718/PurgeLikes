@@ -75,4 +75,14 @@ def grab_all_titles
     new_document.puts "#{counter}: #{el.text}"
     counter += 1
   end
+  new_document.close
+end
+
+def shutdown
+  sleep(1)
+  puts "Everything is all taken care of!"
+  sleep(1)
+  puts "Goodbye!"
+  sleep(1)
+  @browser.close
 end
