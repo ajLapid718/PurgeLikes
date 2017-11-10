@@ -45,5 +45,15 @@ def submit_password
   rescue
     "Moving on..."
   end
-  puts "Successfully logged in. Navigating to your Likes immediately."
+  puts "Successfully logged in. Navigating to your profile..."
+end
+
+def click_on_profile
+  puts "Clicking on your profile..."
+  begin
+    @browser.span(:class => "_1vp5").click
+  rescue
+    "Moving on..."
+  end
+  puts "Successfully on your profile..."
 end
