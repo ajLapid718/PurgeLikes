@@ -59,8 +59,9 @@ def navigate_to_all_likes
 end
 
 def unlike_pages
-  while true
+  loop do
     @browser.button(:text => "Liked").click
     @browser.link(:text => "Unlike").click
+    break if @browser.button(:text => "Liked").exists? == false
   end
 end
