@@ -59,9 +59,20 @@ def navigate_to_all_likes
 end
 
 def unlike_pages
+  puts "Currently unliking all Pages..."
   loop do
     @browser.button(:text => "Liked").click
     @browser.link(:text => "Unlike").click
     break if @browser.button(:text => "Liked").exists? == false
+    puts "One success...many more to go..."
+  end
+end
+
+def grab_all_titles
+  new_document = File.open("AllLikedPages.txt", "w")
+  counter = 1
+  @browser.divs(:class => /^fsl fwb fcb$/).each do |el|
+    new_document.puts "#{counter}: #{el.text}"
+    counter += 1
   end
 end
