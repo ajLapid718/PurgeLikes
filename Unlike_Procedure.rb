@@ -1,4 +1,5 @@
 require 'highline/import'
+require 'watir'
 
 def get_email
   print "Enter your e-mail address: "
@@ -18,4 +19,31 @@ def get_password
     puts error_message
     retry
   end
+end
+
+def start_browser_session
+  @browser = Watir::Browser.start("https://www.facebook.com/", :chrome, switches: %w[--log-level=3 --headless])
+  Watir.default_timeout = 10
+  puts "Opening Facebook's website..."
+end
+
+def enter_email
+  puts " "
+  puts "Typing in your e-mail address..."
+  begin
+    @browser.text_field(:name => "email").set(EMAIL)
+  rescue
+    "Moving on..."
+  end
+end
+
+def submit_password
+  puts " "
+  puts "Typing in your password..."
+  begin
+    @browser.tap { |b| b.text_field(:name => "pass").set(PASSWORD) }.send_keys(:enter)
+  rescue
+    "Moving on..."
+  end
+  puts "Successfully logged in. Navigating to your Likes immediately."
 end
