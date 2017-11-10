@@ -70,6 +70,7 @@ def unlike_pages
 end
 
 def grab_all_titles
+  puts "Currently jotting down all the titles of the Pages..."
   new_document = File.open("AllLikedPages.txt", "w")
   counter = 1
   @browser.divs(:class => /^fsl fwb fcb$/).each do |el|
