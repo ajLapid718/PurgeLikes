@@ -3,7 +3,7 @@ require 'watir'
 
 def get_email
   print "Enter your e-mail address: "
-  return gets.chomp
+  EMAIL = gets.chomp
 end
 
 def get_password
@@ -11,7 +11,7 @@ def get_password
     facebook_password = ask("Enter your password: ") { |q| q.echo = "*" }
     password_confirmation = ask("Confirm your password: ") { |q| q.echo = "*" }
     if facebook_password == password_confirmation
-      return facebook_password
+      PASSWORD = facebook_password
     else
       raise Exception.new("Your passwords do not match. Try again.")
     end
