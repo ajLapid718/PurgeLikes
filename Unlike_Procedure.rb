@@ -45,15 +45,15 @@ def submit_password
   rescue
     "Moving on..."
   end
-  puts "Successfully logged in. Navigating to your profile..."
+  puts "Successfully logged in. Navigating to All Likes now..."
 end
 
-def click_on_profile
-  puts "Clicking on your profile..."
+def navigate_to_all_likes
+  username = @browser.a(:class => /^_2s25 _606w$/).href[25..-1]
   begin
-    @browser.span(:class => "_1vp5").click
+      @browser.goto("https://www.facebook.com/#{username}/likes")
   rescue
     "Moving on..."
   end
-  puts "Successfully on your profile..."
+  puts "Successfully on your All Likes page."
 end
