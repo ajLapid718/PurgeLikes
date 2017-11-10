@@ -86,3 +86,21 @@ def shutdown
   sleep(1)
   @browser.close
 end
+
+def unlike_everything
+  start_time = Time.now
+  get_email
+  get_password
+  start_browser_session
+  enter_email
+  submit_password
+  navigate_to_all_likes
+  unlike_pages
+  grab_all_titles
+  puts "This script took #{(Time.now - start_time).to_i} seconds to complete!"
+  shutdown
+end
+
+if __FILE__ == $PROGRAM_NAME
+  unlike_everything
+end
