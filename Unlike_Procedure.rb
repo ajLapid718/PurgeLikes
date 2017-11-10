@@ -45,6 +45,7 @@ def submit_password
   rescue
     "Moving on..."
   end
+  puts " "
   puts "Successfully logged in. Navigating to All Likes now..."
 end
 
@@ -89,8 +90,6 @@ end
 
 def unlike_everything
   start_time = Time.now
-  EMAIL = get_email
-  PASSWORD = get_password
 
   start_browser_session
   enter_email
@@ -104,5 +103,7 @@ def unlike_everything
 end
 
 if __FILE__ == $PROGRAM_NAME
+  EMAIL = get_email
+  PASSWORD = get_password
   unlike_everything
 end
