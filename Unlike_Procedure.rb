@@ -3,7 +3,7 @@ require 'watir'
 
 def get_email
   print "Enter your e-mail address: "
-  EMAIL = gets.chomp
+  return gets.chomp
 end
 
 def get_password
@@ -11,7 +11,7 @@ def get_password
     facebook_password = ask("Enter your password: ") { |q| q.echo = "*" }
     password_confirmation = ask("Confirm your password: ") { |q| q.echo = "*" }
     if facebook_password == password_confirmation
-      PASSWORD = facebook_password
+      return facebook_password
     else
       raise Exception.new("Your passwords do not match. Try again.")
     end
@@ -89,14 +89,16 @@ end
 
 def unlike_everything
   start_time = Time.now
-  get_email
-  get_password
+  EMAIL = get_email
+  PASSWORD = get_password
+
   start_browser_session
   enter_email
   submit_password
   navigate_to_all_likes
   unlike_pages
   grab_all_titles
+
   puts "This script took #{(Time.now - start_time).to_i} seconds to complete!"
   shutdown
 end
