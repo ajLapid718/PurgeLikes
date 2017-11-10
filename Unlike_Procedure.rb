@@ -51,9 +51,16 @@ end
 def navigate_to_all_likes
   username = @browser.a(:class => /^_2s25 _606w$/).href[25..-1]
   begin
-      @browser.goto("https://www.facebook.com/#{username}/likes")
+    @browser.goto("https://www.facebook.com/#{username}/likes")
   rescue
     "Moving on..."
   end
   puts "Successfully on your All Likes page."
+end
+
+def unlike_pages
+  while true
+    @browser.button(:text => "Liked").click
+    @browser.link(:text => "Unlike").click
+  end
 end
