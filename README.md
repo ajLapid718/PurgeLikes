@@ -2,7 +2,7 @@
 
 I've been a member of Facebook since 2009. I would casually and frequently like various Facebook Pages here and there without much thought about the consequences down the line. Over time, the FB Pages accumulated and eventually developed into quite a sizeable amount. Personally, I have around 1200 liked pages, which means a lot of my news feed has become cluttered.
 
-I wasn't particularly troubled by the situation, and I would unfollow a page every now and then, but it's useful to have this solution on tap for when I want to or when someone else eventually wants to make some significant changes to clean up their news feed. Most of the pages have become abandoned or have taken on the essence of spam so this is definitely a way to get back to seeing posts from people or pages we'd actually be interested in viewing.
+I wasn't particularly troubled by the situation, and I would unfollow a page every now and then, but it's useful to have this solution on tap for when I want to or when someone else eventually wants to make some significant changes to clean up their news feed. Most of the pages have become abandoned or have adopted the essence of spam so this is certainly a viable approach to getting back to seeing posts from people or pages we'd actually be interested in viewing.
 
 Once all of the Liked Pages are done away with, the script creates a text file in the same directory that the script was executed in. This file will have the title `AllLikedPages.txt` and it will have an ordered list (numerical list) of all of the pages that were unliked. This allows the client to be more informed about the aftermath and the information might enable the client to re-like/re-subscribe to pages they were genuinely interested in following in the first place.
 
