@@ -1,6 +1,6 @@
 ## Background
 
-I've been a member of Facebook since 2009. I would casually and frequently like various Facebook Pages here and there without much thought about the consequences down the line. Over time, the FB Pages accumulated and eventually developed into quite a sizeable amount. Personally, Having around 1300 liked pages, a lot of my news feed has become fairly cluttered at this point.
+I've been a member of Facebook since 2009. I would casually and frequently like various Facebook Pages here and there without much thought about the consequences down the line. Over time, the FB Pages accumulated and eventually developed into quite a sizeable amount. Personally having around 1300 liked pages, a lot of my news feed has become fairly cluttered at this point.
 
 I wasn't particularly troubled by the situation, and I would unfollow a page every now and then, but it's useful to have this solution on tap for when I want to or when someone else eventually wants to make some significant changes to clean up their news feed. Most of the pages have become abandoned or have adopted the essence of spam so this is certainly a viable approach to getting back to seeing posts from people or pages we'd actually be interested in viewing.
 
