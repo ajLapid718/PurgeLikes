@@ -22,7 +22,7 @@ def get_password
 end
 
 def start_browser_session
-  @browser = Watir::Browser.start("https://www.facebook.com/", :chrome, switches: %w[--log-level=3 --headless])
+  @browser = Watir::Browser.start("https://www.facebook.com/", :chrome, switches: %w[--log-level=3 --incognito])
   Watir.default_timeout = 10
   puts "Opening Facebook's website..."
 end
