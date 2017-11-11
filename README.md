@@ -2,15 +2,15 @@
 
 ## The Situation
 
-![Problem](misc/FBLikesDisplay.gif)
+![Problem](Misc/FBLikesDisplay.gif)
 
 ## Expected Output I
 
-![Solution](misc/FBLikesOutput.gif)
+![Solution](Misc/FBLikesOutput.gif)
 
 ## Expected Output II
 
-![List of Likes](misc/FBLikesOutputText.gif)
+![List of Likes](Misc/FBLikesOutputText.gif)
 
 ## Dependencies
 
