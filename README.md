@@ -10,7 +10,7 @@
 
 ## Expected Output II
 
-![List of Likes](Misc/FBLikesOutputText.gif)
+![List of Likes](Misc/FBLikesOutputTextFile.gif)
 
 ## Dependencies
 
